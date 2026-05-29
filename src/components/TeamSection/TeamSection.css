@@ -1,0 +1,26 @@
+.team-section {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 80px;
+
+  padding: 60px;
+
+  background-color: #f8dede;
+}
+
+/* FOTO */
+
+.team-left {
+  display: flex;
+  justify-content: center;
+}
+
+/* TEXTO */
+
+.team-right {
+  display: flex;
+  align-items: center;
+}
