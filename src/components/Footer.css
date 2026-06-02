@@ -79,6 +79,7 @@
   text-align: center;
   gap: 16px;
   min-width: 250px;
+  color: white;
 
   svg, img, i {
     width: 50px;
