@@ -1,16 +1,7 @@
 import { Link } from "react-router";
 import "./Header.css";
 
-interface NavLink {
-  label: string;
-  href: string;
-}
-
-interface HeaderProps {
-  links?: NavLink[];
-}
-
-const defaultLinks: NavLink[] = [
+const defaultLinks = [
   { label: "Quem somos", href: "/quem-somos" },
   { label: "OSCS", href: "/oscs" },
   { label: "Inscrição", href: "/inscricao" },
@@ -26,7 +17,7 @@ const BirdLogo = () => (
   />
 );
 
-export function Header({ links = defaultLinks }: HeaderProps) {
+export function Header({ links = defaultLinks }) {
   return (
     <header className="header">
       <div className="header-inner">
