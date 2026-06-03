@@ -1,9 +1,18 @@
 .header {
-  background-color: #ffffff;
-  border-bottom: 1px solid #f0eded;
+  background-color: rgba(255, 255, 255, 0.455);
+  border: 1px solid rgba(240, 237, 237, 0.6);
+  border-radius: 12px;
   position: sticky;
-  top: 0;
+  top: 16px;
   z-index: 100;
+  margin: 16px 32px 0;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.367);
+
+  @media (max-width: 1024px) {
+    margin: 12px 16px 0;
+    top: 12px;
+  }
 }
 
 .header-inner {
@@ -39,18 +48,18 @@
 .header-nav {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 24px;
 
   @media (max-width: 1024px) {
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2px;
+    gap: 8px;
   }
 }
 
 .header-link {
   color: #C0392B;
-  font-size: 14px;
+  font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   padding: 6px 10px;
