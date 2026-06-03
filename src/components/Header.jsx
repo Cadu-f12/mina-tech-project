@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import "./Header.css";
 
 const defaultLinks = [
-  { label: "Quem somos", href: "/quem-somos" },
+  { label: "Quem somos", href: "/quem-somos",},
   { label: "OSCS", href: "/oscs" },
   { label: "Inscrição", href: "/inscricao" },
   { label: "Programação", href: "/programacao" },
