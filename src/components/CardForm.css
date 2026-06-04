@@ -1,0 +1,68 @@
+body {
+  background-color: #ededed;
+}
+
+.card {
+  padding-left: 50px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+  width: 70%;
+  background-color: #fbfbfb;
+  margin-right: 41px;
+  margin-left: 20px;
+  padding-top: 50px;
+  margin-bottom: 39px;
+  border-radius: 7px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.section-title h2 {
+  margin: 0;
+  color: #e58a97;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.section-title .line {
+  flex: 1;
+  height: 2px;
+  background-color: #e58a97;
+}
+
+.children1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 30px;
+}
+
+.children1 > * {
+  flex: 1;
+}
+
+.children2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 30px;
+}
+
+.children2 > * {
+  flex: 1;
+}
+
+.timeline {
+  background-color: red;
+  width: 30%;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.page {
+  display: flex;
+}
