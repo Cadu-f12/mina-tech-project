@@ -1,17 +1,15 @@
-/* Componente que cuida da parte visual do caroussel */
+/* Componente que cuida da parte visual do carrossel */
 
 import "./TeamPhotoCard.css";
 
-type TeamPhotoCardProps = {
-  image: string;
-  name: string;
-  role: string;
-};
-
-export default function TeamPhotoCard({ image, name, role, }: TeamPhotoCardProps) {
+export default function TeamPhotoCard({ image, name, role }) {
   return (
     <div className="team-photo-card">
-      <img src={image} alt={name} className="team-photo-image" />
+      <img
+        src={image}
+        alt={name}
+        className="team-photo-image"
+      />
 
       <div className="team-photo-info">
         <div className="team-name">

@@ -1,14 +1,14 @@
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
+import './OSCS.css';
+import '../components/TeamCarousel/TeamPhotoCard/TeamPhotoCard'
 
-const OSCS = () => {
-  return (
-    <div>
-      <Header />
-      <h1>OSCS</h1>
-      <Footer />
-    </div>
-  );
-};
+import TeamSection from '../components/TeamSection/TeamSection';
 
-export default OSCS;
+export default function OSCS() {
+    return (
+        <>
+            <div className="container mt-5">
+                <TeamSection />
+            </div>
+        </>
+    );
+}
