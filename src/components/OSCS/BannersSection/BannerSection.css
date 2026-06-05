@@ -1,0 +1,28 @@
+.banner-section {
+    display: flex;
+    flex-direction: column;
+
+    gap: 50px;
+
+    max-width: 1200px;
+    margin: 90px auto;
+    padding: 0 40px;
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+    .banner-section {
+        margin: 70px auto;
+        padding: 0 30px;
+        gap: 40px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+    .banner-section {
+        margin: 50px auto;
+        padding: 0 20px;
+        gap: 30px;
+    }
+}

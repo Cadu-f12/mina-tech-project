@@ -1,13 +1,14 @@
-import './OSCS.css';
-import '../components/TeamCarousel/TeamPhotoCard/TeamPhotoCard'
+import "./OSCS.css";
 
-import TeamSection from '../components/TeamSection/TeamSection';
+import TeamSection from '../components/OSCS/TeamCard/TeamSection/TeamSection';
+import BannerSection from '../components/OSCS/BannersSection/BannerSection'
 
 export default function OSCS() {
     return (
         <>
-            <div className="container mt-5">
+            <div className="oscs-body">
                 <TeamSection />
+                <BannerSection />
             </div>
         </>
     );
