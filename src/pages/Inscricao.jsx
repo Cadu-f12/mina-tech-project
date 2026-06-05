@@ -5,6 +5,8 @@ import Input from "../components/components.inscricao/Input";
 import Select from "../components/components.inscricao/Select";
 import userImg from "../assets/user.png";
 import Title from "../components/components.inscricao/Title";
+import Button from "../components/components.inscricao/Button";
+import Radio from "../components/components.inscricao/radio";
 
 // https://docs.google.com/forms/d/e/1FAIpQLSdrt0iVja0Tfxu_oxpDpXeAuenp9f_D6piMyE08Qon2HfFAoA/viewform
 
@@ -22,6 +24,10 @@ const Inscricao = () => {
           text="Dados pessoais"
           children1={
             <>
+              <Input
+                text="Nome completo"
+                placeholder="Digite seu nome completo"
+              />
               <Input
                 text="Nome completo"
                 placeholder="Digite seu nome completo"
@@ -67,7 +73,10 @@ const Inscricao = () => {
           text="Diversidade e inclusão"
           children1={
             <>
-              <Input text="Telefone" placeholder="+55 (00) 0000-0000" />
+              <Button text="Você é neurodivergente?" title="Sim" />
+              <Button text="" title="Não" />
+              <Button text="" title="Não sei ao certo" />
+              <Button text="" title="Prefiro não dizer" />
             </>
           }
           children2={
@@ -116,6 +125,20 @@ const Inscricao = () => {
               />{" "}
             </>
           }
+        />
+        <CardForm
+          timelineTitle="Acesso digital"
+          text="Acesso digital  "
+          children1={
+            <>
+              <Radio text="Computador / notebook" />
+              <Select text="" data={["qts", "1-2", "3-4", "5-6", "7+"]} />
+              <Radio text="Computador / notebook" />
+              <Select text="" data={["qts", "1-2", "3-4", "5-6", "7+"]} />
+              <Radio text="Nenhum dos acima" />
+            </>
+          }
+          children2={<></>}
         />
       </div>
       <Footer />
