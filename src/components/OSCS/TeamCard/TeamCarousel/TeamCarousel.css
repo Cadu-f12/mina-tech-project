@@ -1,0 +1,68 @@
+.team-carousel {
+  position: relative;
+
+  width: fit-content;
+}
+
+/* BOTÕES */
+
+.carousel-button {
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 45px;
+  height: 45px;
+
+  border: none;
+
+  cursor: pointer;
+
+  background-color: rgba(255, 255, 255, 0.5);
+
+  color: white;
+
+  font-size: 2rem;
+
+  transition: 0.3s;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+/* INDICADORES */
+
+.carousel-indicators {
+  position: absolute;
+
+  bottom: 10px;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+
+  border: none;
+
+  cursor: pointer;
+
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.indicator.active {
+  background-color: white;
+}

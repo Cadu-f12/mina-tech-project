@@ -1,0 +1,16 @@
+.sponsor-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.2s ease;
+}
+
+.sponsor-link:hover {
+    transform: scale(1.05);
+}
+
+.sponsor-image {
+    object-fit: contain;
+    cursor: pointer;
+}

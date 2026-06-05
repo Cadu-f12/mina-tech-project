@@ -1,0 +1,123 @@
+.partnerships-section {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 0 40px;
+}
+
+.partnerships-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #a88787;
+    margin-bottom: 40px;
+}
+
+.partnerships-title {
+    font-size: 2.7rem;
+    color: #7c0000;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.partnerships-subtitle {
+    font-size: 1.5rem;
+    color: #666;
+    
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.partnerships-logos {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.partnerships-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.partnerships-row img {
+    object-fit: contain;
+}
+
+/* Primeira linha */
+.partnerships-row:first-child img {
+    max-width: 240px;
+}
+
+/* Segunda linha */
+.partnerships-row:last-child img {
+    max-width: 150px;
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+
+    .partnerships-title {
+        font-size: 3rem;
+    }
+
+    .partnerships-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .partnerships-row {
+        gap: 50px;
+    }
+
+    .partnerships-row:first-child img {
+        max-width: 220px;
+    }
+
+    .partnerships-row:last-child img {
+        max-width: 140px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+
+    .partnerships-section {
+        padding: 0 20px;
+    }
+
+    .partnerships-title {
+        font-size: 2.5rem;
+    }
+
+    .partnerships-subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 60px;
+    }
+
+    .partnerships-row {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .partnerships-row:first-child img,
+    .partnerships-row:last-child img {
+        max-width: 180px;
+    }
+
+}
+
+.partnerships-row a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.2s ease;
+}
+
+.partnerships-row a:hover {
+    transform: scale(1.05);
+}
+
+.partnerships-row img {
+    object-fit: contain;
+    cursor: pointer;
+}

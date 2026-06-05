@@ -1,14 +1,17 @@
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
+import "./OSCS.css";
 
-const OSCS = () => {
-  return (
-    <div>
-      <Header />
-      <h1>OSCS</h1>
-      <Footer />
-    </div>
-  );
-};
+import TeamSection from '../components/OSCS/TeamCard/TeamSection/TeamSection';
+import BannerSection from '../components/OSCS/BannersSection/BannerSection'
+import PartnershipsSection from "../components/OSCS/Partnerships/PartnershipsSection";
 
-export default OSCS;
+export default function OSCS() {
+    return (
+        <div className="oscs-body">
+            <main className="oscs-container">
+                <TeamSection />
+                <BannerSection />
+                <PartnershipsSection />
+            </main>
+        </div>
+    );
+}
