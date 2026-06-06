@@ -1,0 +1,16 @@
+.select {
+  width: 100%;
+  height: 90px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #f8e9e940;
+  background-color: #fbfbfb;
+  color: #4829294d;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.select option {
+  font-size: 25px;
+  color: #4829294d;
+}

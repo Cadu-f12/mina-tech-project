@@ -1,0 +1,94 @@
+body {
+  background-color: #ededed;
+}
+
+.page {
+  display: flex;
+}
+
+.timeline {
+  width: 30%;
+  background-color: #fbfbfb;
+  padding-left: 50px;
+  padding-right: 40px;
+  padding-top: 50px;
+  border-radius: 7px;
+
+  margin-left: 40px;
+  margin-right: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.timeline-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 78px;
+  height: 78px;
+}
+
+.vertical-line {
+  width: 4px;
+  height: 400px;
+  background: #ff0033;
+  border-radius: 999px;
+  margin-top: 25px;
+}
+
+.timeline-title {
+  margin-left: 25px;
+  margin-top: 10px;
+  color: #dd6e7c;
+}
+
+.card {
+  width: 70%;
+  background-color: #fbfbfb;
+  padding: 50px 40px 50px 20px;
+  margin-bottom: 39px;
+  border-radius: 7px;
+  margin-right: 40px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.section-title h2 {
+  margin: 0;
+  color: #e58a97;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.section-title .line {
+  flex: 1;
+  height: 2px;
+  background-color: #e58a97;
+}
+
+.children1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.children2 {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.children1 > *,
+.children2 > * {
+  flex: 1;
+}
