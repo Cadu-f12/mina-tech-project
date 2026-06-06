@@ -1,6 +1,6 @@
-import "./radio.css";
+import "./Radio.css";
 
-const Radio = ({ text }) => {
+const Radio = ({ value, checked, onChange, text }) => {
   return (
     <div className="full-card">
       <div className="check-card">
@@ -9,8 +9,10 @@ const Radio = ({ text }) => {
             type="radio"
             id="radio"
             name="drone"
-            value="radio"
             className="radio"
+            value={value}
+            checked={checked}
+            onChange={(e) => onChange(e.target.value)}
           />
         </div>
         <div className="label">
