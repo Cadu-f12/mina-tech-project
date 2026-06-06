@@ -2,8 +2,6 @@ import { addDoc, collection } from "firebase/firestore";
 import { db } from "../db/db";
 
 import CardForm from "../components/components.inscricao/CardForm";
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
 import Input from "../components/components.inscricao/Input";
 import Select from "../components/components.inscricao/Select";
 import userImg from "../assets/user.png";
@@ -86,7 +84,6 @@ const Inscricao = () => {
 
   return (
     <div>
-      <Header />
       <div>
         <>
           <Title />
@@ -280,7 +277,6 @@ const Inscricao = () => {
         />
         <SubmitButton onClick={handleSubmit} />
       </div>
-      <Footer />
     </div>
   );
 };
