@@ -1,7 +1,7 @@
 .partnerships-section {
     max-width: 1200px;
-    margin: 100px auto;
-    padding: 0 40px;
+    padding: 45px 5%;
+    margin: clamp(20px, 3vw, 60px) auto;
 }
 
 .partnerships-divider {
@@ -79,10 +79,6 @@
 
 /* Celulares */
 @media (max-width: 768px) {
-
-    .partnerships-section {
-        padding: 0 20px;
-    }
 
     .partnerships-title {
         font-size: 2.5rem;
