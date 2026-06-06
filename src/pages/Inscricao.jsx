@@ -86,7 +86,7 @@ const Inscricao = () => {
 
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
       <div>
         <>
           <Title />
