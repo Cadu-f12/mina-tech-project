@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.body{
+    font-family: 'Ancizar Serif', serif;
+}
+
+.banner{
+    height: 50vh;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    object-position: center 20%;
+    transform: scaleX(-1);
+}
+.banner-text{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.banner-subtitle {
+  font-size: 2rem;
+  color: #8B1A1A; /* ajuste a cor exata do Figma */
+}
+
+.banner-title {
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.banner-title em {
+  color: #8B1A1A; /* mesma cor do subtítulo */
+  font-style: italic;
+}
