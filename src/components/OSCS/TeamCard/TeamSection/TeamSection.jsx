@@ -1,6 +1,6 @@
 import "./TeamSection.css";
 
-import TeamCarousel from "../TeamCarousel/TeamCarousel";
+import TeamCarousel from "./TeamCarousel/TeamCarousel";
 import TeamDescription from "./TeamDescription/TeamDescription";
 
 export default function TeamSection() {

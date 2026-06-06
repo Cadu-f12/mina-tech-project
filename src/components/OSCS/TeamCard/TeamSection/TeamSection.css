@@ -1,24 +1,45 @@
 .team-section {
-  display: flex;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 
-  align-items: center;
-  justify-content: center;
+    gap: clamp(40px, 6vw, 80px);
 
-  gap: 160px; /* 80px */
+    padding: 45px 5%;
 
-  padding: 60px; /* 60px */
+    max-width: 1400px;
+
+    margin: clamp(20px, 3vw, 60px) auto;
 }
 
-/* FOTO */
+.team-left,
+.team-right {
+    flex: 1;
+}
 
 .team-left {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
-/* TEXTO */
-
 .team-right {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+
+    .team-section {
+        flex-direction: column;
+    }
+
+    .team-right {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .team-description-container {
+        align-items: center;
+    }
+
 }

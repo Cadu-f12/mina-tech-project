@@ -1,9 +1,9 @@
 /* Imagens e dados que alimentam o carrousel */
 /* O carousel pega os dados do array e cria os componentes de acordo com cada objeto */
 
-import tatiana from "../../../../assets/tatiana.png"
-import maria from "../../../../assets/maria.jpg"
-import ana from "../../../../assets/ana.jpg"
+import tatiana from "../../../../../assets/tatiana.png"
+import maria from "../../../../../assets/maria.jpg"
+import ana from "../../../../../assets/ana.jpg"
 
 export const members = [
   {

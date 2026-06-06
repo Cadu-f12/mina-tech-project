@@ -1,3 +1,6 @@
+import { useEffect } from "react";
+import Lenis from "lenis";
+
 import { BrowserRouter, Route, Routes } from "react-router";
 import Home from "./pages/Home";
 import QuemSomos from "./pages/QuemSomos";
@@ -8,8 +11,25 @@ import FAQ from "./pages/FAQ";
 import Contato from "./pages/Contato";
 import Layout from "./components/Layout";
 
-
 function App() {
+  useEffect(() => { // Função para inicializar o Lenis e configurar a animação de rolagem suave para todas as páginas do aplicativo
+    const lenis = new Lenis();
+
+    let animationFrameId;
+
+    function raf(time) {
+      lenis.raf(time);
+      animationFrameId = requestAnimationFrame(raf);
+    }
+
+    animationFrameId = requestAnimationFrame(raf);
+
+    return () => {
+      cancelAnimationFrame(animationFrameId);
+      lenis.destroy();
+    };
+  }, []);
+
   return (
     <BrowserRouter>
       <Routes>
