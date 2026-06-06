@@ -1,5 +1,7 @@
 .partnerships-section {
-    max-width: 1200px;
+    max-width: 1400px;
+    width: 95%;
+
     padding: 45px 5%;
     margin: clamp(20px, 3vw, 60px) auto;
 }
