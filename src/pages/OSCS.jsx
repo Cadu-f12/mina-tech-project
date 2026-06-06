@@ -1,16 +1,10 @@
-import "./OSCS.css";
-
-import TeamSection from '../components/OSCS/TeamCard/TeamSection/TeamSection';
-import BannerSection from '../components/OSCS/BannersSection/BannerSection'
-import PartnershipsSection from "../components/OSCS/Partnerships/PartnershipsSection";
+import Layout from "../components/OSCS/OSCS-layout/Layout";
 
 export default function OSCS() {
     return (
         <div className="oscs-body">
             <main className="oscs-container">
-                <TeamSection />
-                <BannerSection />
-                <PartnershipsSection />
+                <Layout />
             </main>
         </div>
     );

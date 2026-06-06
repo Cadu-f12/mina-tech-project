@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.oscs-body {
+.layout-body {
     min-height: 100vh;
 
     background-color: #f8dede;
@@ -12,7 +12,7 @@ html {
     overflow-x: hidden;
 }
 
-.oscs-container {
+.layout-container {
     display: flex;
     flex-direction: column;
 
@@ -22,7 +22,7 @@ html {
     padding-inline: clamp(20px, 4vw, 60px);
 }
 
-.oscs-body img {
+.layout-body img {
     display: block;
 }
 
