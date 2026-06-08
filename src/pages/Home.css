@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
-.body{
-    font-family: 'Ancizar Serif', serif;
-}
-
 .banner{
+    font-family: 'Ancizar Serif', serif;
     height: 50vh;
     background-color: white;
     overflow: hidden;
     position: relative;
+    margin-top: calc(-96px - 16px);
+    
 }
 
 .banner img{
@@ -39,4 +38,77 @@
 .banner-title em {
   color: #8B1A1A; /* mesma cor do subtítulo */
   font-style: italic;
+}
+
+.secao-150 {
+  position: relative;
+  overflow: hidden;
+  padding: 3rem 2rem;
+  background: linear-gradient(to right, #ffffff, #f5c0c0);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.secao-150-texto {
+  font-family: 'Ancizar Serif', serif;
+  z-index: 1;
+}
+
+.mais-de {
+  font-size: 1.5rem;
+  color: #8B1A1A;
+  margin: 0;
+}
+
+.meninas-impactadas span {
+  font-size: 6rem;
+  font-weight: 700;
+  color: #8B1A1A;
+  line-height: 1;
+  margin: 0;
+}
+
+.meninas-impactadas {
+  font-size: 1.2rem;
+  color: #8B1A1A;
+  margin: 0;
+}
+
+.circulo-gratis {
+  font-family: 'Ancizar Serif', serif;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 10px solid rgba(255, 255, 255, 0.541);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #5a0000;
+  text-align: center;
+}
+
+.circulo {
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.decorativo-1 {
+  width: 200px;
+  height: 200px;
+  bottom: -60px;
+  left: 30%;
+}
+
+.decorativo-2 {
+  width: 120px;
+  height: 120px;
+  top: -30px;
+  left: 40%;
 }
