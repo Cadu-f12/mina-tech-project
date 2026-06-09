@@ -1,0 +1,31 @@
+.team-description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  max-width: 500px;
+}
+
+.team-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+
+    line-height: 1.1;
+
+    color: #7a0000;
+
+    font-weight: 400;
+
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.team-text {
+  font-size: 1.2rem;
+
+  line-height: 1.5;
+
+  color: #2d2d2d;
+
+  margin-top: 30px;
+  margin-bottom: 20px;
+}

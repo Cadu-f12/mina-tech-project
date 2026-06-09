@@ -1,14 +1,11 @@
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
+import Layout from "../components/OSCS/OSCS-layout/Layout";
 
-const OSCS = () => {
-  return (
-    <div>
-      <Header />
-      <h1>OSCS</h1>
-      <Footer />
-    </div>
-  );
-};
-
-export default OSCS;
+export default function OSCS() {
+    return (
+        <div className="oscs-body">
+            <main className="oscs-container">
+                <Layout />
+            </main>
+        </div>
+    );
+}

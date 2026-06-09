@@ -1,16 +1,14 @@
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../db/db";
 
-import CardForm from "../components/components.inscricao/CardForm";
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
-import Input from "../components/components.inscricao/Input";
-import Select from "../components/components.inscricao/Select";
+import CardForm from "../components/inscricao/CardForm";
+import Input from "../components/inscricao/Input";
+import Select from "../components/inscricao/Select";
 import userImg from "../assets/user.png";
-import Title from "../components/components.inscricao/Title";
-import Button from "../components/components.inscricao/Button";
-import Radio from "../components/components.inscricao/Radio";
-import SubmitButton from "../components/components.inscricao/SubmitButton";
+import Title from "../components/inscricao/Title";
+import Button from "../components/inscricao/Button";
+import Radio from "../components/inscricao/Radio";
+import SubmitButton from "../components/inscricao/SubmitButton";
 import { useState } from "react";
 
 const Inscricao = () => {
@@ -86,7 +84,6 @@ const Inscricao = () => {
 
   return (
     <div>
-      <Header />
       <div>
         <>
           <Title />
@@ -280,7 +277,6 @@ const Inscricao = () => {
         />
         <SubmitButton onClick={handleSubmit} />
       </div>
-      <Footer />
     </div>
   );
 };
