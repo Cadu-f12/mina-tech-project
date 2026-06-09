@@ -11,22 +11,28 @@ const Home = () => {
         <img src={minasHome} alt="Imagem de mulheres scientistas" className="banner-img" />
         <div className="banner-text">
             <p className="banner-subtitle">- Jornada Minatech . Florianópolis</p>
-            <h1 className="banner-title">Tecnologia feita <em>por meninas,<br />para meninas.</em></h1>
+            <h1 className="banner-title">Tecnologia<br />feita <em>por meninas,<br />para meninas.</em></h1>
         </div>  
       </div>
       
       <section className="secao-150">
         <div className="secao-150-texto">
           <p className="mais-de">Mais de</p>
-          <p className="meninas-impactadas"><span>150</span> meninas impactadas na<br />grande Florianópolis!</p>
+          <p className="meninas-impactadas"><span>150</span><br /> meninas impactadas na<br />grande Florianópolis!</p>
         </div>
 
-        <div className="circulo-gratis">
-          <p>100%<br />GRATUITO</p>
+        <div className="circulo-gratis-ex">
+          <div className="circulo-gratis-in">
+            <p>100%<br />GRATUITO</p>
+          </div>
         </div>
 
-        <div className="circulo decorativo-1"></div>
-        <div className="circulo decorativo-2"></div>  
+        <div className="circulos-deco">
+          <div className="circulo-deco c1"></div>
+          <div className="circulo-deco c2"></div>
+          <div className="circulo-deco c3"></div>
+          <div className="circulo-deco c4"></div>
+        </div>  
       </section>
     </div>
   );

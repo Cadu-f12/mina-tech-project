@@ -2,7 +2,7 @@
 
 .banner{
     font-family: 'Ancizar Serif', serif;
-    height: 50vh;
+    height: 105vh;
     background-color: white;
     overflow: hidden;
     position: relative;
@@ -15,22 +15,22 @@
     height: 100%;
     object-fit: cover;
     opacity: 0.5;
-    object-position: center 20%;
+    object-position: center 0%;
     transform: scaleX(-1);
 }
 .banner-text{
     position: absolute;
-    top: 2rem;
+    top: 5rem;
     left: 2rem;
 }
 
 .banner-subtitle {
-  font-size: 2rem;
+  font-size: 3.5rem;
   color: #8B1A1A; /* ajuste a cor exata do Figma */
 }
 
 .banner-title {
-  font-size: 3.5rem;
+  font-size: 6.5rem;
   font-weight: 400;
   line-height: 1.2;
 }
@@ -43,9 +43,9 @@
 .secao-150 {
   position: relative;
   overflow: hidden;
-  padding: 3rem 2rem;
-  background: linear-gradient(to right, #ffffff, #f5c0c0);
-  display: flex;
+  padding: 6rem 3rem;
+  background: radial-gradient(circle at 15% 60%, #ffd6d6, hsl(0, 90%, 66%));
+  display: fex;
   align-items: center;
   justify-content: space-between;
 }
@@ -53,62 +53,71 @@
 .secao-150-texto {
   font-family: 'Ancizar Serif', serif;
   z-index: 1;
+
 }
 
 .mais-de {
   font-size: 1.5rem;
   color: #8B1A1A;
-  margin: 0;
 }
 
 .meninas-impactadas span {
   font-size: 6rem;
   font-weight: 700;
   color: #8B1A1A;
-  line-height: 1;
-  margin: 0;
 }
 
 .meninas-impactadas {
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: #8B1A1A;
-  margin: 0;
 }
 
-.circulo-gratis {
-  font-family: 'Ancizar Serif', serif;
-  z-index: 1;
-  width: 120px;
-  height: 120px;
+.circulo-gratis-ex {
+  position: absolute;
+  top: 5%;
+  left: 80%;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   background-color: transparent;
-  border: 10px solid rgba(255, 255, 255, 0.541);
+  border: 3px solid rgba(255, 255, 255, 0.500);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.circulo-gratis-in {
+  font-family: 'Ancizar Serif', serif;
+  z-index: 1;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.500);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #5a0000;
   text-align: center;
 }
 
-.circulo {
+.circulos-deco {
+  position: absolute;
+  top: 60%;
+  left: 15%;
+}
+
+.circulo-deco {
   position: absolute;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.4);
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  transform: translate(-50%, -50%);
 }
 
-.decorativo-1 {
-  width: 200px;
-  height: 200px;
-  bottom: -60px;
-  left: 30%;
-}
-
-.decorativo-2 {
-  width: 120px;
-  height: 120px;
-  top: -30px;
-  left: 40%;
-}
+.c1 { width: 290px;  height: 290px; }
+.c2 { width: 390px; height: 390px; }
+.c3 { width: 510px; height: 510px; }
+.c4 { width: 650px; height: 650px; }
