@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap');
 
 .banner{
-    font-family: 'Ancizar Serif', serif;
+    font-family: "Ancizar Serif", serif;
+    font-style: normal;
     height: 105vh;
     background-color: white;
     overflow: hidden;
@@ -20,7 +21,7 @@
 }
 .banner-text{
     position: absolute;
-    top: 5rem;
+    top: 8rem;
     left: 2rem;
 }
 
@@ -45,19 +46,21 @@
   overflow: hidden;
   padding: 6rem 3rem;
   background: radial-gradient(circle at 15% 60%, #ffd6d6, hsl(0, 90%, 66%));
-  display: fex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .secao-150-texto {
+  position: relative;
   font-family: 'Ancizar Serif', serif;
   z-index: 1;
+  margin-left: 3rem;
 
 }
 
 .mais-de {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #8B1A1A;
 }
 
@@ -70,6 +73,7 @@
 .meninas-impactadas {
   font-size: 2rem;
   color: #8B1A1A;
+  margin-left: 5.5rem;
 }
 
 .circulo-gratis-ex {
@@ -85,11 +89,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 0;
 }
 
 .circulo-gratis-in {
   font-family: 'Ancizar Serif', serif;
-  z-index: 1;
+  z-index: 0;
   width: 140px;
   height: 140px;
   border-radius: 50%;
@@ -108,6 +113,7 @@
   position: absolute;
   top: 60%;
   left: 15%;
+  z-index: 0;
 }
 
 .circulo-deco {
@@ -115,9 +121,48 @@
   border-radius: 50%;
   border: 3px solid rgba(255, 255, 255, 0.5);
   transform: translate(-50%, -50%);
+  z-index: 0;
 }
 
 .c1 { width: 290px;  height: 290px; }
 .c2 { width: 390px; height: 390px; }
 .c3 { width: 510px; height: 510px; }
 .c4 { width: 650px; height: 650px; }
+
+.secao-quem-somos {
+  padding: 0rem 2rem 4rem 2rem;
+  display: flex;
+  align-items: center;
+  
+}
+
+.quem-somos-texto {
+  width: 50%;
+  font-family: 'Ancizar Serif', serif;
+}
+
+.quem-somos-titulo {
+  color: #8B1A1A;
+  font-size: 6rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.quem-somos-subtitulo {
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 0rem;
+  margin-bottom: 1.5rem;
+}
+
+.quem-somos-texto p{
+  font-size: 2rem;
+}
+
+.quem-somos-divisor {
+  border: none;
+  border-top: 2px solid #8B1A1A;
+  width: 15%;
+  margin-left: 1rem;
+}
