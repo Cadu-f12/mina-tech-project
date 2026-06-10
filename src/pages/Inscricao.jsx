@@ -5,6 +5,11 @@ import CardForm from "../components/inscricao/CardForm";
 import Input from "../components/inscricao/Input";
 import Select from "../components/inscricao/Select";
 import userImg from "../assets/user.png";
+import contactImg from "../assets/Group 53.png";
+import inclusaoImg from "../assets/Group 54.png";
+import situacaoImg from "../assets/Group 55.png";
+import digitalImg from "../assets/Group 56.png";
+
 import Title from "../components/inscricao/Title";
 import Button from "../components/inscricao/Button";
 import Radio from "../components/inscricao/Radio";
@@ -127,6 +132,7 @@ const Inscricao = () => {
           }
         />
         <CardForm
+          imgPath={contactImg}
           timelineTitle="Contato"
           text="Contato"
           children1={
@@ -152,6 +158,7 @@ const Inscricao = () => {
           }
         />
         <CardForm
+          imgPath={inclusaoImg}
           timelineTitle="Diversidade e inclusão"
           text="Diversidade e inclusão"
           children1={
@@ -195,6 +202,7 @@ const Inscricao = () => {
           }
         />
         <CardForm
+          imgPath={situacaoImg}
           timelineTitle="Situação familiar"
           text="Situação familiar"
           children1={
@@ -236,6 +244,7 @@ const Inscricao = () => {
           }
         />
         <CardForm
+          imgPath={digitalImg}
           timelineTitle="Acesso digital"
           text="Acesso digital  "
           children1={
