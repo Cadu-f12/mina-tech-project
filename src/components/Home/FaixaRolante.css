@@ -1,0 +1,28 @@
+.faixa-rolante {
+  background-color: #4A3331;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 1rem 0;
+}
+
+.faixa-trilha {
+  display: inline-block;
+  width: max-content;
+  animation: rolar 20s linear infinite;
+}
+
+.faixa-item {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.faixa-ponto {
+  color: #ffffff;
+  margin-left: 1rem;
+}
+
+@keyframes rolar {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-25%); }
+}

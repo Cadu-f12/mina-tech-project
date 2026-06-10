@@ -1,0 +1,33 @@
+.card-programa {
+  position: relative;
+  background-color: #ffffff;
+  border-left: 6px solid #8B1A1A;
+  max-width: 580px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 0 8px 8px 0;
+}
+
+.card-programa-texto {
+  font-size: 1.2rem;
+  color: #333;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-programa-marca {
+  position: absolute;
+  right: -1.5rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgba(139, 26, 26, 0.08);
+  letter-spacing: 4px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.btn {
+    font-size: 1.2rem;
+}

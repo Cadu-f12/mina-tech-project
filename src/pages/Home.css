@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap');
+.home-wraper{
+  position: relative
+}
 
 .banner{
     font-family: "Ancizar Serif", serif;
@@ -7,6 +10,7 @@
     background-color: white;
     overflow: hidden;
     position: relative;
+    z-index: 2;
     margin-top: calc(-96px - 16px);
     
 }
@@ -41,11 +45,19 @@
   font-style: italic;
 }
 
+.banner-card {
+  position: absolute;
+  bottom: -80px;
+  left: 36rem;
+  z-index: 3;
+}
+
 .secao-150 {
   position: relative;
+  z-index: 1;
   overflow: hidden;
   padding: 6rem 3rem;
-  background: radial-gradient(circle at 15% 60%, #ffd6d6, hsl(0, 90%, 66%));
+  background: radial-gradient(circle at 15% 80%, #ffd6d6, hsl(0, 90%, 66%));
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -53,6 +65,7 @@
 
 .secao-150-texto {
   position: relative;
+  top: 6rem;
   font-family: 'Ancizar Serif', serif;
   z-index: 1;
   margin-left: 3rem;
@@ -111,7 +124,7 @@
 
 .circulos-deco {
   position: absolute;
-  top: 60%;
+  top: 80%;
   left: 15%;
   z-index: 0;
 }

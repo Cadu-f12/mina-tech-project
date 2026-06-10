@@ -1,12 +1,12 @@
 import  minasHome from '../assets/minasHome.png';
 import './Home.css';
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
+import FaixaRolante from "../components/Home/FaixaRolante";
+import CardPrograma from "../components/Home/CardPrograma";
 
 
 const Home = () => {
   return (
-    <div>
+    <div className='HomeWraper'>
       <div className="banner">
         <img src={minasHome} alt="Imagem de mulheres scientistas" className="banner-img" />
         <div className="banner-text">
@@ -14,7 +14,9 @@ const Home = () => {
             <h1 className="banner-title">Tecnologia<br />feita <em>por meninas,<br />para meninas.</em></h1>
         </div>  
       </div>
-      
+      <div className="banner-card">
+        <CardPrograma />
+      </div>
       <section className="secao-150">
         <div className="secao-150-texto">
           <p className="mais-de">Mais de</p>
@@ -34,6 +36,7 @@ const Home = () => {
           <div className="circulo-deco c4"></div>
         </div>  
       </section>
+      <FaixaRolante items={["Inovação", "Tecnologia", "Ciência", "Diversidade", "Educação", "Empoderamento", "Futuro"]} />
       <section className="secao-quem-somos">
         <div className="quem-somos-texto">
           <h2 className="quem-somos-titulo">Quem somos</h2>
