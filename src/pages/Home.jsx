@@ -9,10 +9,12 @@ const Home = () => {
     <div className='HomeWraper'>
       <div className="banner">
         <img src={minasHome} alt="Imagem de mulheres scientistas" className="banner-img" />
-        <div className="banner-text">
+        <div className="banner-content">
+          <div className="banner-text">
             <p className="banner-subtitle">- Jornada Minatech . Florianópolis</p>
             <h1 className="banner-title">Tecnologia<br />feita <em>por meninas,<br />para meninas.</em></h1>
-        </div>  
+          </div>  
+        </div>
       </div>
       <div className="banner-card">
         <CardPrograma />
@@ -36,7 +38,7 @@ const Home = () => {
           <div className="circulo-deco c4"></div>
         </div>  
       </section>
-      <FaixaRolante items={["Inovação", "Tecnologia", "Ciência", "Diversidade", "Educação", "Empoderamento", "Futuro"]} />
+      <FaixaRolante items={["Inovação", "Tecnologia", "Diversidade", "Educação", "Empoderamento", "Futuro"]} />
       <section className="secao-quem-somos">
         <div className="quem-somos-texto">
           <h2 className="quem-somos-titulo">Quem somos</h2>

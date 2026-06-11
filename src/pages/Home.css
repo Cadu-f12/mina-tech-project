@@ -23,11 +23,19 @@
     object-position: center 0%;
     transform: scaleX(-1);
 }
-.banner-text{
-    position: absolute;
-    top: 8rem;
-    left: 2rem;
+
+.banner-content {
+  position: absolute;
+  top: 12rem;
+  left: 8rem;
+  right: 2rem;
 }
+
+.banner-text{
+  top: 8rem;
+  left: 2rem;
+}
+
 
 .banner-subtitle {
   font-size: 3.5rem;
@@ -47,8 +55,8 @@
 
 .banner-card {
   position: absolute;
-  bottom: -80px;
-  left: 36rem;
+  bottom: 60px;
+  left: 46rem;
   z-index: 3;
 }
 
@@ -57,7 +65,7 @@
   z-index: 1;
   overflow: hidden;
   padding: 6rem 3rem;
-  background: radial-gradient(circle at 15% 80%, #ffd6d6, hsl(0, 90%, 66%));
+  background: radial-gradient(circle at 20% 70%, #ffd6d6, hsl(0, 90%, 66%));
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -65,7 +73,7 @@
 
 .secao-150-texto {
   position: relative;
-  top: 6rem;
+  top: 5rem;
   font-family: 'Ancizar Serif', serif;
   z-index: 1;
   margin-left: 3rem;
@@ -73,28 +81,30 @@
 }
 
 .mais-de {
-  font-size: 2rem;
+  font-size: 4rem;
   color: #8B1A1A;
 }
 
 .meninas-impactadas span {
-  font-size: 6rem;
+  font-size: 8rem;
   font-weight: 700;
   color: #8B1A1A;
 }
 
 .meninas-impactadas {
-  font-size: 2rem;
+  font-size: 4rem;
+  line-height: 1.2;
   color: #8B1A1A;
-  margin-left: 5.5rem;
+  margin-left: 12rem;
 }
 
 .circulo-gratis-ex {
   position: absolute;
-  top: 5%;
-  left: 80%;
-  width: 180px;
-  height: 180px;
+  top: -25%;
+  left: 65%;
+  line-height: 5rem;
+  width: 540px;
+  height: 540px;
   border-radius: 50%;
   background-color: transparent;
   border: 3px solid rgba(255, 255, 255, 0.500);
@@ -108,8 +118,8 @@
 .circulo-gratis-in {
   font-family: 'Ancizar Serif', serif;
   z-index: 0;
-  width: 140px;
-  height: 140px;
+  width: 420px;
+  height: 420px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.500);
   display: flex;
@@ -117,15 +127,15 @@
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 6rem;
   color: #5a0000;
   text-align: center;
 }
 
 .circulos-deco {
   position: absolute;
-  top: 80%;
-  left: 15%;
+  top: 70%;
+  left: 20%;
   z-index: 0;
 }
 
@@ -137,10 +147,10 @@
   z-index: 0;
 }
 
-.c1 { width: 290px;  height: 290px; }
-.c2 { width: 390px; height: 390px; }
-.c3 { width: 510px; height: 510px; }
-.c4 { width: 650px; height: 650px; }
+.c1 { width: 500px;  height: 500px; }
+.c2 { width: 650px; height: 650px; }
+.c3 { width: 900px; height: 900px; }
+.c4 { width: 1100px; height: 1100px; }
 
 .secao-quem-somos {
   padding: 0rem 2rem 4rem 2rem;
