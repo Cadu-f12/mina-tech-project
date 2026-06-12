@@ -1,74 +1,285 @@
 .header {
-  background-color: rgba(255, 255, 255, 0.455);
-  border: 1px solid rgba(240, 237, 237, 0.6);
-  border-radius: 12px;
-  position: sticky;
-  top: 16px;
+  position: relative;
   z-index: 100;
-  margin: 16px 32px 0;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.367);
+  width: min(100% - 32px, 1200px);
+  max-height: 84px;
+  margin: 0 auto;
+  overflow: hidden;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.548);
+  border-radius: 8px;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(14px);
+  transition:
+    max-height 320ms ease,
+    border-color 220ms ease,
+    background-color 220ms ease;
+  will-change: max-height;
+}
 
-  @media (max-width: 1024px) {
-    margin: 12px 16px 0;
-    top: 12px;
-  }
+.header-controler {
+  position: fixed;
+  top: 16px;
+  left: 32px;
+  right: 32px;
+  z-index: 100;
+  margin: 0;
 }
 
 .header-inner {
+  width: 100%;
+  padding: 10px 18px;
+}
+
+.header-bar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 32px;
-  max-width: 1200px;
-  margin: 0 auto;
-
-  @media (max-width: 1024px) {
-    padding: 10px 20px;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
+  gap: 16px;
+  min-height: 52px;
 }
 
 .header-logo {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 8px;
+  flex: 0 0 auto;
   text-decoration: none;
 }
 
-.header-brand {
-  font-size: 16px;
-  font-weight: 600;
-  color: #C0392B;
-  font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 0.5px;
+.header-logo-image {
+  display: block;
+  width: 96px;
+  height: auto;
+}
+
+.header-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  margin-left: auto;
+  padding: 0 18px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+  background: #971E1E;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  box-shadow: 0 10px 24px rgba(85, 85, 85, 0.623);
+  transition:
+    transform 180ms ease,
+    background-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.header-cta:hover {
+  background: #424242;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.36);
+  transform: translateY(-1px);
+}
+
+.header-cta:focus-visible,
+.header-menu-button:focus-visible,
+.header-link:focus-visible {
+  outline: 2px solid #000000;
+  outline-offset: 3px;
+}
+
+.header-menu-button {
+  display: none;
+  width: 44px;
+  height: 44px;
+  padding: 9px 6px;
+  color: #000000;
+  background: transparent;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.header-menu-line {
+  display: block;
+  width: 30px;
+  height: 3px;
+  margin: 5px auto;
+  background: currentColor;
+  border-radius: 999px;
+  transform-origin: center;
+  transition:
+    opacity 180ms ease,
+    transform 220ms ease;
 }
 
 .header-nav {
   display: flex;
   align-items: center;
-  gap: 24px;
-
-  @media (max-width: 1024px) {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-  }
+  gap: 22px;
+  margin-left: 32px;
 }
 
 .header-link {
-  color: #C0392B;
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  color: rgba(0, 0, 0, 0.84);
+  font-size: 15px;
+  font-weight: 700;
   text-decoration: none;
-  padding: 6px 10px;
-  border-radius: 4px;
-  transition: background 0.2s, opacity 0.2s;
   white-space: nowrap;
+  transition:
+    color 180ms ease,
+    opacity 180ms ease;
+}
 
-  &:hover {
-    background: rgba(192, 57, 43, 0.08);
-    opacity: 0.85;
+.header-link::after {
+  position: absolute;
+  right: 0;
+  bottom: 3px;
+  left: 0;
+  height: 2px;
+  content: "";
+  background: #000000;
+  border-radius: 999px;
+  opacity: 0;
+  transform: scaleX(0.6);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+.header-link:hover {
+  color: #ffffff;
+}
+
+.header-link:hover::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+@media (min-width: 768px) {
+  .header {
+    max-height: 84px;
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-bar {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-controler {
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .header {
+    width: 100%;
+    max-height: 70px;
+    margin: 0;
+    border-color: rgba(255, 255, 255, 0.26);
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0.568);
+  }
+
+  .header--open {
+    max-height: 430px;
+    border-color: rgba(0, 0, 0, 0.42);
+  }
+
+  .header-inner {
+    padding: 8px 26px 18px;
+  }
+
+  .header-bar {
+    min-height: 54px;
+    gap: 12px;
+  }
+
+  .header-logo-image {
+    width: 78px;
+  }
+
+  .header-cta {
+    min-height: 34px;
+    padding: 0 14px;
+    font-size: 13px;
+  }
+
+  .header-menu-button {
+    display: inline-block;
+    flex: 0 0 auto;
+  }
+
+  .header--open .header-menu-line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .header--open .header-menu-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .header--open .header-menu-line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .header-nav {
+    /* A altura do header abre com max-height; os links entram com opacity/transform para suavizar a revelacao. */
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+    margin: 10px 0 0;
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition:
+      opacity 220ms ease 80ms,
+      transform 240ms ease 80ms;
+  }
+
+  .header--open .header-nav {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .header-link {
+    justify-content: center;
+    min-height: 42px;
+    padding: 0 12px;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 16px;
+    border-radius: 4px;
+  }
+
+  .header-link:hover {
+    background: rgba(47, 130, 255, 0.12);
+  }
+
+  .header-link::after {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header,
+  .header-cta,
+  .header-menu-line,
+  .header-nav,
+  .header-link,
+  .header-link::after {
+    transition-duration: 1ms;
   }
 }

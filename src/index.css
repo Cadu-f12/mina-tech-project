@@ -10,6 +10,26 @@ body {
   padding: 0;
 }
 
+:root {
+  --page-background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(255, 70, 91, 0.2),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 85% 70%,
+      rgba(255, 70, 91, 0.15),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 50% 100%,
+      rgba(255, 70, 91, 0.1),
+      transparent 40%
+    ),
+    #ffffff;
+}
+
 @font-face {
   font-family: "42dot Sans";
   src: url("./assets/fonts/42dot-sans-font-family/42dotsans-regular.ttf")
@@ -20,6 +40,18 @@ body {
 
 body {
   font-family: "42dot Sans", sans-serif;
+  background: var(--page-background);
+}
+
+.app-main {
+  min-height: 100vh;
+  padding-top: 110px;
+}
+
+@media (max-width: 767px) {
+  .app-main {
+    padding-top: 70px;
+  }
 }
 /* :root {
   --text: #6b6375;
