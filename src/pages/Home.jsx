@@ -47,7 +47,11 @@ const Home = () => {
           <p>A Corali e os Engenheiros sem Fronteiras (Florianópolis), se uniram para organizar a Jornada Minatech.</p>
           <p>Temos o sonho de inspirar meninas a conhecerem e seguirem carreiras tecnológicas, mostrando que elas têm capacidade e que essas profissões não são só para meninos.</p>
           <p>Para isso, promovemos oficinas de lógica, matemática e física, junto com talks sobre profissões, soft skills, empreendedorismo, diversidade e empoderamento feminino.</p>
+          <div className='image-container'>
+            <img src="../assets/Equipe" alt="Equeipe Minatech" />
+          </div>
         </div>
+
       </section>
     </div>
   );
