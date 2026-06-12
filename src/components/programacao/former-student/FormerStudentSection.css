@@ -1,0 +1,63 @@
+.former-student-section {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3rem;
+
+    padding: 4rem 0;
+
+    background-color: #f4f4f4;
+}
+
+.former-student-section > h2 {
+    margin: 0 5% 2rem;
+
+    color: #700000;
+
+    font-size: 4.8rem;
+    font-weight: 400;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .former-student-section {
+        padding: 3rem 0;
+    }
+
+    .former-student-section > h2 {
+        margin: 0 5% 2rem;
+        font-size: 4rem;
+    }
+
+    .former-student-card {
+        margin: 0 2rem;
+    }
+
+}
+
+
+/* ================= CELULAR ================= */
+
+@media (max-width: 768px) {
+
+    .former-student-section {
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+
+    .former-student-section > h2 {
+        margin: 0 2rem 2rem;
+
+        text-align: center;
+
+        font-size: 3rem;
+    }
+
+    .former-student-card {
+        margin: 0 1.5rem;
+    }
+
+}
