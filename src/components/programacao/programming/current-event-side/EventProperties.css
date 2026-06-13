@@ -1,0 +1,75 @@
+.event-property {
+    display: flex;
+    align-items: center;
+
+    gap: 1.8rem;
+
+    min-height: 7.2rem;
+
+    padding: 1.4rem 2rem;
+
+    border-radius: 4px;
+
+    background-color: #f1f1f1;
+
+    box-shadow:
+        0 .8rem 1.8rem rgba(112, 0, 0, 0.16);
+}
+
+.icon-property {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-property img {
+    width: 2.6rem;
+    height: 2.6rem;
+
+    object-fit: contain;
+}
+
+.content-property {
+    display: flex;
+    flex-direction: column;
+
+    gap: .2rem;
+}
+
+.content-property h3 {
+    margin: 0;
+
+    color: #c06f6f;
+
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.content-property p {
+    margin: 0;
+
+    color: #6d6d6d;
+
+    font-size: 1.6rem;
+    line-height: 1.2;
+}
+
+
+/* ================= CELULAR ================= */
+
+@media (max-width: 768px) {
+
+    .event-property {
+        min-height: 6.4rem;
+
+        padding: 1.2rem 1.6rem;
+    }
+
+    .content-property h3,
+    .content-property p {
+        font-size: 1.4rem;
+    }
+
+}

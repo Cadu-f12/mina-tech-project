@@ -1,0 +1,119 @@
+.schedule-preview-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 2rem;
+
+    min-height: 12.5rem;
+
+    padding: 1.8rem 2.4rem;
+
+    border-radius: 28px;
+
+    background-color: #f2f2f2;
+
+    box-shadow:
+        0 .8rem 2rem rgba(0, 0, 0, 0.08);
+}
+
+.schedule-preview-div:first-child {
+    background-color: #f4a9b7;
+}
+
+.schedule-preview-content {
+    flex: 1;
+
+    min-width: 0;
+}
+
+.schedule-preview-content h3 {
+    margin: 0 0 1rem;
+
+    color: #4a4a4a;
+
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.schedule-preview-div:first-child .schedule-preview-content h3,
+.schedule-preview-div:first-child .schedule-preview-content p {
+    color: #700000;
+}
+
+.schedule-preview-content p {
+    display: -webkit-box;
+    overflow: hidden;
+
+    margin: 0;
+
+    color: #6d6d6d;
+
+    font-size: 1.6rem;
+    line-height: 1.18;
+
+    -webkit-box-orient: vertical;
+}
+
+.schedule-preview-image {
+    flex-shrink: 0;
+}
+
+.schedule-preview-image img {
+    width: 10rem;
+    height: 9.4rem;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .schedule-preview-div {
+        min-height: 11.5rem;
+
+        padding: 1.6rem 2rem;
+    }
+
+    .schedule-preview-image img {
+        width: 9rem;
+        height: 8.4rem;
+    }
+
+}
+
+
+/* ================= CELULAR ================= */
+
+@media (max-width: 768px) {
+
+    .schedule-preview-div {
+        gap: 1.4rem;
+
+        min-height: 10rem;
+
+        padding: 1.4rem 1.6rem;
+
+        border-radius: 22px;
+    }
+
+    .schedule-preview-content h3 {
+        margin-bottom: .6rem;
+
+        font-size: 1.7rem;
+    }
+
+    .schedule-preview-content p {
+        font-size: 1.35rem;
+    }
+
+    .schedule-preview-image img {
+        width: 7.6rem;
+        height: 7.2rem;
+    }
+
+}

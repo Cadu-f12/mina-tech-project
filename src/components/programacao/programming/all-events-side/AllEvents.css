@@ -1,0 +1,111 @@
+.all-events-div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3rem;
+
+    width: min(100%, 46rem);
+}
+
+.all-events-header h1 {
+    margin: 0;
+
+    color: #700000;
+
+    font-size: 5.6rem;
+    font-weight: 400;
+}
+
+.all-events-header p {
+    margin: .6rem 0 0;
+
+    color: #555;
+
+    font-size: 2.4rem;
+}
+
+.schedules-div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2.6rem;
+
+    max-height: 42rem;
+
+    padding: 0 2rem 0 1.2rem;
+
+    overflow-y: hidden;
+    overscroll-behavior: contain;
+
+    border-left: 1px solid #c7c7c7;
+    border-right: 1px solid #c7c7c7;
+
+    scrollbar-width: thin;
+    scrollbar-color: #b9b9b9 transparent;
+}
+
+.schedules-div:hover {
+    overflow-y: auto;
+}
+
+.schedules-div::-webkit-scrollbar {
+    width: .8rem;
+}
+
+.schedules-div::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.schedules-div::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+
+    background-color: #b9b9b9;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .all-events-div {
+        width: 100%;
+    }
+
+    .all-events-header h1 {
+        font-size: 4.6rem;
+    }
+
+    .all-events-header p {
+        font-size: 2rem;
+    }
+
+}
+
+
+/* ================= CELULAR ================= */
+
+@media (max-width: 768px) {
+
+    .all-events-div {
+        gap: 2rem;
+    }
+
+    .all-events-header {
+        text-align: center;
+    }
+
+    .all-events-header h1 {
+        font-size: 3.6rem;
+    }
+
+    .all-events-header p {
+        font-size: 1.7rem;
+    }
+
+    .schedules-div {
+        max-height: 34rem;
+
+        padding: 0 1.2rem;
+    }
+
+}
