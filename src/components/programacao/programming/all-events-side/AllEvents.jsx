@@ -1,9 +1,8 @@
 import "./AllEvents.css";
 
 import SchedulePreview from "./SchedulePreview";
-import { allEventsData } from "../data-programming";
 
-export default function AllEvents() {
+export default function AllEvents({ events = [] }) {
     return (
         <>
             <div className="all-events-div">
@@ -13,7 +12,7 @@ export default function AllEvents() {
                 </div>
 
                 <div className="schedules-div">
-                    {allEventsData.map((event) => (
+                    {events.map((event) => (
                         <SchedulePreview
                             key={event.id}
                             date={event.date}
