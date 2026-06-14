@@ -66,6 +66,18 @@
 
 /* ================= TABLET ================= */
 
+@media (max-width: 1100px) {
+
+    .current-event-image {
+        display: none;
+    }
+
+    .current-event-div {
+        width: min(100%, 44rem);
+    }
+
+}
+
 @media (max-width: 900px) {
 
     .current-event-div {

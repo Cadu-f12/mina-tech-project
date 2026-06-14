@@ -1,10 +1,13 @@
 .former-student-card {
     display: flex;
     align-items: center;
+    justify-content: center;
 
-    gap: 4rem;
+    gap: 6rem;
 
-    padding: 1.5rem 3rem;
+    width: 100%;
+
+    padding: 3rem 6rem;
 
     background-color: #fff;
 
@@ -30,7 +33,7 @@
 }
 
 .former-student-content {
-    flex: 1;
+    flex: 0 1 68rem;
 
     display: flex;
     flex-direction: column;
@@ -72,7 +75,7 @@
 
     .former-student-card {
         gap: 3rem;
-        padding: 3rem;
+        padding: 3rem 4rem;
     }
 
     .former-student-image img {
@@ -99,7 +102,7 @@
 
     .former-student-card {
         gap: 2rem;
-        padding: 2rem;
+        padding: 2rem 1.5rem;
     }
 
     .former-student-image img {
@@ -109,6 +112,8 @@
 
     .former-student-content,
     .former-student-card.reverse .former-student-content {
+        flex: none;
+
         align-items: center;
         max-width: 100%;
 
