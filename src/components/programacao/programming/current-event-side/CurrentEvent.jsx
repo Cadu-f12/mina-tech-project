@@ -7,7 +7,7 @@ import horarioPhoto from "../../../../assets/icone-horario.png";
 
 import EventProperties from "./EventProperties";
 
-export default function CurrentEvent({ image, currentDay, date, properties }) {
+export default function CurrentEvent({ image, currentDay, date, properties = {} }) {    
     return (
         <>
             <div className="current-event-div">
