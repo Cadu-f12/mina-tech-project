@@ -17,3 +17,10 @@
 .text {
   color: #482929a8;
 }
+
+@media (max-width: 1182px) {
+  .text {
+    color: #482929a8;
+    font-size: 18px;
+  }
+}

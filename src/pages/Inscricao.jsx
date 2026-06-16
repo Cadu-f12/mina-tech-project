@@ -1,14 +1,19 @@
 import { addDoc, collection } from "firebase/firestore";
 import { db } from "../db/db";
 
-import CardForm from "../components/components.inscricao/CardForm";
-import Input from "../components/components.inscricao/Input";
-import Select from "../components/components.inscricao/Select";
+import CardForm from "../components/inscricao/CardForm";
+import Input from "../components/inscricao/Input";
+import Select from "../components/inscricao/Select";
 import userImg from "../assets/user.png";
-import Title from "../components/components.inscricao/Title";
-import Button from "../components/components.inscricao/Button";
-import Radio from "../components/components.inscricao/Radio";
-import SubmitButton from "../components/components.inscricao/SubmitButton";
+import contactImg from "../assets/Group 53.png";
+import inclusaoImg from "../assets/Group 54.png";
+import situacaoImg from "../assets/Group 55.png";
+import digitalImg from "../assets/Group 56.png";
+
+import Title from "../components/inscricao/Title";
+import Button from "../components/inscricao/Button";
+import Radio from "../components/inscricao/Radio";
+import SubmitButton from "../components/inscricao/SubmitButton";
 import { useState } from "react";
 
 const Inscricao = () => {
@@ -127,6 +132,7 @@ const Inscricao = () => {
           }
         />
         <CardForm
+          imgPath={contactImg}
           timelineTitle="Contato"
           text="Contato"
           children1={
@@ -152,6 +158,7 @@ const Inscricao = () => {
           }
         />
         <CardForm
+          imgPath={inclusaoImg}
           timelineTitle="Diversidade e inclusão"
           text="Diversidade e inclusão"
           children1={
@@ -195,6 +202,7 @@ const Inscricao = () => {
           }
         />
         <CardForm
+          imgPath={situacaoImg}
           timelineTitle="Situação familiar"
           text="Situação familiar"
           children1={
@@ -236,6 +244,7 @@ const Inscricao = () => {
           }
         />
         <CardForm
+          imgPath={digitalImg}
           timelineTitle="Acesso digital"
           text="Acesso digital  "
           children1={

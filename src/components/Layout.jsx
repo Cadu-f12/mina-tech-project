@@ -7,9 +7,9 @@ export default function Layout() {
   return (
     <>
       <div className="header-controler">
-        <Header />
+
+      <Header />
       </div>
-      
 
       <main>
         <Outlet />

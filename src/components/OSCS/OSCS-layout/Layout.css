@@ -30,8 +30,8 @@ html {
 .layout-container {
     display: flex;
     flex-direction: column;
-
     max-width: 1400px;
+    
     margin: 0 auto;
 
     padding-inline: clamp(20px, 4vw, 60px);
