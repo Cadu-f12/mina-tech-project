@@ -27,7 +27,7 @@
   border-width: 0px;
   margin-left: 30px;
   margin-right: 30px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -69,9 +69,15 @@
 }
 
 @media (max-width: 874px) {
-  .img-accordion {
+  /* .img-accordion {
     display: none;
+  } */
+
+  .img-accordion {
+    width: 100px;
+    height: 100px;
   }
+
   .content-accordion {
     text-align: start;
     font-weight: 400;
