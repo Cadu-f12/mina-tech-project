@@ -1,0 +1,142 @@
+.schedule-preview-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 1.6rem;
+
+    min-height: 11.2rem;
+
+    padding: 1.6rem 2rem;
+
+    border-radius: 28px;
+
+    background-color: #f2f2f2;
+
+    box-shadow:
+        0 .8rem 2rem rgba(0, 0, 0, 0.08);
+}
+
+.schedule-preview-div:first-child {
+    background-color: #f4a9b7;
+}
+
+.schedule-preview-content {
+    flex: 1;
+
+    min-width: 0;
+}
+
+.schedule-preview-content h3 {
+    margin: 0 0 1rem;
+
+    color: #4a4a4a;
+
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.schedule-preview-div:first-child .schedule-preview-content h3,
+.schedule-preview-div:first-child .schedule-preview-content p {
+    color: #700000;
+}
+
+.schedule-preview-content p {
+    display: -webkit-box;
+    overflow: hidden;
+
+    margin: 0;
+
+    color: #6d6d6d;
+
+    font-size: 1.4rem;
+    line-height: 1.18;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.schedule-preview-image {
+    flex-shrink: 0;
+}
+
+.schedule-preview-image img {
+    width: 8.8rem;
+    height: 8.4rem;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .schedule-preview-div {
+        min-height: 11.5rem;
+
+        padding: 1.6rem 2rem;
+    }
+
+    .schedule-preview-image img {
+        width: 9rem;
+        height: 8.4rem;
+    }
+
+}
+
+
+/* ================= CELULAR ================= */
+
+@media (max-width: 768px) {
+
+    .schedule-preview-div {
+        gap: 1rem;
+
+        min-height: 8.8rem;
+
+        padding: 1.2rem 1.4rem;
+
+        border-radius: 18px;
+    }
+
+    .schedule-preview-content h3 {
+        margin-bottom: .4rem;
+
+        font-size: 1.5rem;
+    }
+
+    .schedule-preview-content p {
+        font-size: 1.15rem;
+        line-height: 1.15;
+
+        -webkit-line-clamp: 3;
+    }
+
+    .schedule-preview-image img {
+        width: 6.2rem;
+        height: 6.8rem;
+
+        border-radius: 8px;
+    }
+
+}
+
+@media (max-width: 380px) {
+
+    .schedule-preview-div {
+        padding: 1rem 1.2rem;
+    }
+
+    .schedule-preview-content p {
+        -webkit-line-clamp: 2;
+    }
+
+    .schedule-preview-image img {
+        width: 5.8rem;
+        height: 6.2rem;
+    }
+
+}

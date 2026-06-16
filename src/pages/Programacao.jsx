@@ -1,7 +1,9 @@
+import ProgramacaoLayout from "../components/programacao/programacao-layout/ProgramacaoLayout";
+
 const Programacao = () => {
   return (
     <div>
-      <h1>Programacao</h1>
+      <ProgramacaoLayout />
     </div>
   );
 };

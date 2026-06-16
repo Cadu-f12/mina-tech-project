@@ -20,6 +20,24 @@ body {
   align-items: flex-start;
 }
 
+@media (max-width: 1182px) {
+  .timeline {
+    display: none;
+  }
+
+  .card {
+    width: auto;
+    flex: 1;
+    margin-right: 20px;
+    margin-left: 20px;
+    box-sizing: border-box;
+  }
+
+  .children2 {
+    display: block;
+  }
+}
+
 .timeline-node {
   display: flex;
   flex-direction: column;
@@ -29,6 +47,7 @@ body {
 .logo {
   width: 78px;
   height: 78px;
+  color: #838383;
 }
 
 .vertical-line {
@@ -74,8 +93,6 @@ body {
 }
 
 .children1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 30px;
   width: 100%;
   margin-top: 20px;
