@@ -10,10 +10,8 @@ const Home = () => {
       <div className="banner">
         <img src={minasHome} alt="Imagem de mulheres scientistas" className="banner-img" />
         <div className="banner-content">
-          <div className="banner-text">
-            <p className="banner-subtitle">- Jornada Minatech . Florianópolis</p>
-            <h1 className="banner-title">Tecnologia<br />feita <em>por meninas,<br />para meninas.</em></h1>
-          </div>  
+          <p className="banner-subtitle">- Jornada Minatech . Florianópolis</p>
+          <h1 className="banner-title">Tecnologia<br />feita <em>por meninas,<br />para meninas.</em></h1>
         </div>
       </div>
       <div className="banner-card">

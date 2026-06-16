@@ -4,9 +4,9 @@
 }
 
 .banner{
+    height: 50rem;
     font-family: "Ancizar Serif", serif;
     font-style: normal;
-    height: 105vh;
     background-color: white;
     overflow: hidden;
     position: relative;
@@ -25,14 +25,9 @@
 
 .banner-content {
   position: absolute;
-  top: 12rem;
-  left: 8rem;
-  right: 2rem;
-}
-
-.banner-text{
-  top: 8rem;
-  left: 2rem;
+  top: 15%;
+  left: 5%;
+  right: 5%;
 }
 
 
@@ -54,8 +49,8 @@
 
 .banner-card {
   position: absolute;
-  bottom: -10rem;
-  left: 30rem;
+  bottom: -20%;
+  left: 32%;
   z-index: 3;
 }
 
@@ -63,7 +58,7 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
-  padding: 6rem 3rem;
+  padding: 5% 5%;
   background: radial-gradient(circle at 20% 70%, #ffd6d6, hsl(0, 90%, 66%));
   display: flex;
   align-items: center;
@@ -72,10 +67,10 @@
 
 .secao-150-texto {
   position: relative;
-  top: 5rem;
   font-family: 'Ancizar Serif', serif;
   z-index: 1;
-  margin-left: 3rem;
+  margin-left: 5%;
+  width: 100%;
 
 }
 
@@ -94,13 +89,13 @@
   font-size: 4rem;
   line-height: 1.2;
   color: #8B1A1A;
-  margin-left: 12rem;
+  margin-left: 15%;
 }
 
 .circulo-gratis-ex {
   position: absolute;
   top: -25%;
-  left: 65%;
+  left: 60%;
   line-height: 5rem;
   width: 540px;
   height: 540px;
