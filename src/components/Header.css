@@ -2,7 +2,6 @@
   position: relative;
   z-index: 100;
   width: min(100% - 32px, 1200px);
-  max-height: 84px;
   margin: 0 auto;
   overflow: hidden;
   color: #ffffff;
@@ -14,7 +13,7 @@
     max-height 320ms ease,
     border-color 220ms ease,
     background-color 220ms ease;
-  will-change: max-height;
+  will-change: max-height; 
 }
 
 .header-controler {
@@ -47,7 +46,7 @@
 
 .header-logo-image {
   display: block;
-  width: 96px;
+  width: 160px;
   height: auto;
 }
 
@@ -150,7 +149,7 @@
 }
 
 .header-link:hover {
-  color: #ffffff;
+  color: #820000;
 }
 
 .header-link:hover::after {
@@ -159,10 +158,6 @@
 }
 
 @media (min-width: 768px) {
-  .header {
-    max-height: 84px;
-  }
-
   .header-inner {
     display: flex;
     align-items: center;
