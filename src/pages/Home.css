@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap');
+.home-wraper{
+  position: relative
+}
+
+.banner{
+    height: 50rem;
+    font-family: "Ancizar Serif", serif;
+    font-style: normal;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    object-position: center 0%;
+    transform: scaleX(-1);
+}
+
+.banner-content {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  right: 5%;
+}
+
+
+.banner-subtitle {
+  font-size: 3.5rem;
+  color: #8B1A1A; /* ajuste a cor exata do Figma */
+}
+
+.banner-title {
+  font-size: 6.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.banner-title em {
+  color: #8B1A1A; /* mesma cor do subtítulo */
+  font-style: italic;
+}
+
+.banner-card {
+  position: absolute;
+  bottom: -20%;
+  left: 32%;
+  z-index: 3;
+}
+
+.secao-150 {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 5% 5%;
+  background: radial-gradient(circle at 20% 70%, #ffd6d6, hsl(0, 90%, 66%));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.secao-150-texto {
+  position: relative;
+  font-family: 'Ancizar Serif', serif;
+  z-index: 1;
+  margin-left: 5%;
+  width: 100%;
+
+}
+
+.mais-de {
+  font-size: 4rem;
+  color: #8B1A1A;
+}
+
+.meninas-impactadas span {
+  font-size: 8rem;
+  font-weight: 700;
+  color: #8B1A1A;
+}
+
+.meninas-impactadas {
+  font-size: 4rem;
+  line-height: 1.2;
+  color: #8B1A1A;
+  margin-left: 15%;
+}
+
+.circulo-gratis-ex {
+  position: absolute;
+  top: -25%;
+  left: 60%;
+  line-height: 5rem;
+  width: 540px;
+  height: 540px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 3px solid rgba(255, 255, 255, 0.500);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+.circulo-gratis-in {
+  font-family: 'Ancizar Serif', serif;
+  z-index: 0;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.500);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 6rem;
+  color: #5a0000;
+  text-align: center;
+}
+
+.circulos-deco {
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  z-index: 0;
+}
+
+.circulo-deco {
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.c1 { width: 500px;  height: 500px; }
+.c2 { width: 650px; height: 650px; }
+.c3 { width: 900px; height: 900px; }
+.c4 { width: 1100px; height: 1100px; }
+

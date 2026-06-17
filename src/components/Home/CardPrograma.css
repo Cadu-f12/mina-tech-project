@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&display=swap');
+
+.card-programa {
+  position: relative;
+  background-color: #ffffff;
+  border-left: 6px solid #8B1A1A;
+  max-width: 35rem;
+  height: 17rem;
+  overflow: hidden;
+  border-radius: 0 8px 8px 0;
+}
+
+.card-programa-texto {
+  font-size: 1.5rem;
+  color: #333;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-programa-marca {
+  font-family: "Ancizar Serif", serif;
+  font-style: normal;
+  position: absolute;
+  right: -6rem;
+  top: 50%;
+  transform: translateY(-50%) rotate(270deg);
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: rgba(139, 26, 26, 0.08);
+  letter-spacing: 4px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.btn {
+    font-size: 1.3rem;
+}
