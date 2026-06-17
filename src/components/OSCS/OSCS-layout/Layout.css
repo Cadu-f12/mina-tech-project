@@ -1,48 +1,43 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .layout-body {
-    min-height: 100vh;
+  min-height: 100vh;
 
-    font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 
-    background:
-        radial-gradient(
-            circle at 15% 20%,
-            rgba(255, 70, 91, 0.20),
-            transparent 30%
-        ),
-        radial-gradient(
-            circle at 85% 70%,
-            rgba(255, 70, 91, 0.15),
-            transparent 35%
-        ),
-        radial-gradient(
-            circle at 50% 100%,
-            rgba(255, 70, 91, 0.10),
-            transparent 40%
-        ),
-        #ffffff;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 70, 91, 0.2), transparent 30%),
+    radial-gradient(
+      circle at 85% 70%,
+      rgba(255, 70, 91, 0.15),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 50% 100%,
+      rgba(255, 70, 91, 0.1),
+      transparent 40%
+    ),
+    #ffffff;
 }
 
 .layout-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 1400px;
-    
-    margin: 0 auto;
-
-    padding-inline: clamp(20px, 4vw, 60px);
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-inline: clamp(20px, 4vw, 60px);
+  padding-top: 100px;
 }
 
 .layout-body img {
-    display: block;
+  display: block;
 }
 
 .team-section,
 .banner-section,
 .partnerships-section {
-    padding-block: clamp(40px, 6vw, 80px);
+  padding-block: clamp(40px, 6vw, 80px);
 }
