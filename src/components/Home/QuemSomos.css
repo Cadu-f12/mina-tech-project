@@ -1,9 +1,9 @@
 .secao-quem-somos {
+  padding: 0rem 2rem 4rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 4rem 2rem;
 }
 
 .quem-somos-img {
@@ -12,25 +12,6 @@
   height: auto;
   border-radius: 8px;
   margin-bottom: 2rem;
-}
-
-.quem-somos-titulo,
-.quem-somos-subtitulo {
-  text-align: center;
-}
-
-.quem-somos-divisor {
-  margin: 1rem auto;
-  width: 200px;
-}
-
-/*=========================================*/
-
-.secao-quem-somos {
-  padding: 0rem 2rem 4rem 2rem;
-  display: flex;
-  align-items: center;
-  
 }
 
 .quem-somos-texto {
@@ -53,13 +34,13 @@
   margin-bottom: 1.5rem;
 }
 
-.quem-somos-texto p{
+.quem-somos-texto p {
   font-size: 2rem;
 }
 
 .quem-somos-divisor {
   border: none;
   border-top: 2px solid #8B1A1A;
-  width: 15%;
-  margin-left: 1rem;
+  width: 35%;
+  margin: 1rem auto;
 }
