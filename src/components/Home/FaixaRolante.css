@@ -26,3 +26,13 @@
   0%   { transform: translateX(0); }
   100% { transform: translateX(-25%); }
 }
+
+@media (max-width: 600px) {
+  .faixa-rolante {
+    padding: 0.75rem 0;
+  }
+
+  .faixa-item {
+    font-size: 0.85rem;
+  }
+}
