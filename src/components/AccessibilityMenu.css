@@ -59,7 +59,6 @@
 .accessibility-trigger svg { width: 28px; height: 28px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 
 html.is-monochrome { filter: grayscale(1); }
-html.animations-paused { scroll-behavior: auto !important; }
 html.animations-paused *, html.animations-paused *::before, html.animations-paused *::after { animation-play-state: paused !important; transition-duration: 0.01ms !important; transition-delay: 0ms !important; }
 
 @media (max-width: 520px) {
