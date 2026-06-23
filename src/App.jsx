@@ -14,20 +14,6 @@ function App() {
   useEffect(() => { // Função para inicializar o Lenis e configurar a animação de rolagem suave para todas as páginas do aplicativo
     const lenis = new Lenis();
 
-    function updateAnimationPreference(event) {
-      const paused = event?.detail?.paused ??
-        document.documentElement.classList.contains("animations-paused");
-
-      if (paused) lenis.stop();
-      else lenis.start();
-    }
-
-    updateAnimationPreference();
-    window.addEventListener(
-      "accessibility-animation-change",
-      updateAnimationPreference,
-    );
-
     let animationFrameId;
 
     function raf(time) {
@@ -38,10 +24,6 @@ function App() {
     animationFrameId = requestAnimationFrame(raf);
 
     return () => {
-      window.removeEventListener(
-        "accessibility-animation-change",
-        updateAnimationPreference,
-      );
       cancelAnimationFrame(animationFrameId);
       lenis.destroy();
     };

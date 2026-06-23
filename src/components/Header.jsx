@@ -75,7 +75,7 @@ export function Header({ links = defaultLinks }) {
               <button
                 key={link.label}
                 type="button"
-                className="header-link"
+                className="header-link header-link--contact"
                 onClick={scrollToPageBottom}
               >
                 {link.label}
