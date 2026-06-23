@@ -3,18 +3,18 @@
     align-items: center;
     justify-content: space-between;
 
-    gap: 1.6rem;
+    gap: 16px;
 
-    min-height: 11.2rem;
+    min-height: 112px;
 
-    padding: 1.6rem 2rem;
+    padding: 16px 18px;
 
-    border-radius: 28px;
+    border-radius: 18px;
 
     background-color: #f2f2f2;
 
     box-shadow:
-        0 .8rem 2rem rgba(0, 0, 0, 0.08);
+        0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .schedule-preview-div:first-child {
@@ -28,11 +28,11 @@
 }
 
 .schedule-preview-content h3 {
-    margin: 0 0 1rem;
+    margin: 0 0 8px;
 
     color: #4a4a4a;
 
-    font-size: 1.8rem;
+    font-size: clamp(18px, 2vw, 22px);
     font-weight: 400;
 }
 
@@ -49,7 +49,7 @@
 
     color: #6d6d6d;
 
-    font-size: 1.4rem;
+    font-size: 15px;
     line-height: 1.18;
 
     -webkit-box-orient: vertical;
@@ -61,8 +61,8 @@
 }
 
 .schedule-preview-image img {
-    width: 8.8rem;
-    height: 8.4rem;
+    width: 88px;
+    height: 84px;
 
     object-fit: cover;
 
@@ -75,14 +75,14 @@
 @media (max-width: 900px) {
 
     .schedule-preview-div {
-        min-height: 11.5rem;
+        min-height: 112px;
 
-        padding: 1.6rem 2rem;
+        padding: 16px 18px;
     }
 
     .schedule-preview-image img {
-        width: 9rem;
-        height: 8.4rem;
+        width: 88px;
+        height: 84px;
     }
 
 }
@@ -93,31 +93,31 @@
 @media (max-width: 768px) {
 
     .schedule-preview-div {
-        gap: 1rem;
+        gap: 12px;
 
-        min-height: 8.8rem;
+        min-height: 88px;
 
-        padding: 1.2rem 1.4rem;
+        padding: 12px;
 
-        border-radius: 18px;
+        border-radius: 14px;
     }
 
     .schedule-preview-content h3 {
-        margin-bottom: .4rem;
+        margin-bottom: 4px;
 
-        font-size: 1.5rem;
+        font-size: 18px;
     }
 
     .schedule-preview-content p {
-        font-size: 1.15rem;
+        font-size: 14px;
         line-height: 1.15;
 
         -webkit-line-clamp: 3;
     }
 
     .schedule-preview-image img {
-        width: 6.2rem;
-        height: 6.8rem;
+        width: 64px;
+        height: 68px;
 
         border-radius: 8px;
     }
@@ -127,7 +127,7 @@
 @media (max-width: 380px) {
 
     .schedule-preview-div {
-        padding: 1rem 1.2rem;
+        padding: 10px 12px;
     }
 
     .schedule-preview-content p {
@@ -135,8 +135,8 @@
     }
 
     .schedule-preview-image img {
-        width: 5.8rem;
-        height: 6.2rem;
+        width: 58px;
+        height: 62px;
     }
 
 }

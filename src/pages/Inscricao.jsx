@@ -15,6 +15,7 @@ import Button from "../components/inscricao/Button";
 import Radio from "../components/inscricao/Radio";
 import SubmitButton from "../components/inscricao/SubmitButton";
 import { useState } from "react";
+import "./Inscricao.css";
 
 const Inscricao = () => {
   const [nome, setNome] = useState("");
@@ -88,11 +89,9 @@ const Inscricao = () => {
   };
 
   return (
-    <div>
-      <div>
-        <>
-          <Title />
-        </>
+    <section className="inscricao-page">
+      <div className="inscricao-container">
+        <Title />
         <CardForm
           imgPath={userImg}
           timelineTitle="Dados pessoais"
@@ -286,7 +285,7 @@ const Inscricao = () => {
         />
         <SubmitButton onClick={handleSubmit} />
       </div>
-    </div>
+    </section>
   );
 };
 

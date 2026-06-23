@@ -2,9 +2,12 @@ import Accordion from "../components/FAQ/Accordion";
 import arrowUp from "../assets/arrow-up.png";
 import arrowDown from "../assets/arrow-down.png";
 import Title from "../components/FAQ/Title";
+import "./FAQ.css";
+
 const FAQ = () => {
   return (
-    <>
+    <section className="faq-page">
+      <div className="faq-container">
       <Title title="Perguntas mais frequentes" />
       <Accordion
         Title="É possível ganhar um certificado?"
@@ -30,7 +33,8 @@ const FAQ = () => {
         imgOpen={arrowUp}
         imgClose={arrowDown}
       />
-    </>
+      </div>
+    </section>
   );
 };
 

@@ -1,13 +1,13 @@
 .title-card {
-  margin-top: 200px;
-
-  margin-left: 44px;
+  margin-bottom: clamp(32px, 5vw, 64px);
 }
 
 .title {
+  max-width: 920px;
+  margin: 0;
   font-weight: 400;
-  font-size: 50px;
-  line-height: 100%;
+  font-size: clamp(32px, 5vw, 50px);
+  line-height: 1.05;
 }
 
 .span {

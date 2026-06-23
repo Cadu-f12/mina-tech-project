@@ -1,22 +1,17 @@
-.card-title {
-  margin-top: 200px;
-  margin-left: 30px;
+.faq-title-card {
+  margin-bottom: clamp(28px, 5vw, 52px);
 }
 
-.title {
-  font-size: 50px;
-  line-height: 100%;
+.faq-title {
+  margin: 0;
+  font-size: clamp(32px, 5vw, 50px);
+  line-height: 1.05;
   font-weight: 400;
+  color: #482929;
 }
 
 @media (max-width: 874px) {
-  .card-title {
-    margin-top: 100px;
-    margin-left: 30px;
-  }
-  .title {
-    font-size: 40px;
-    line-height: 100%;
-    font-weight: 400;
+  .faq-title {
+    font-size: clamp(30px, 8vw, 40px);
   }
 }
