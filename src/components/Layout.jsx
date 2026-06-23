@@ -1,6 +1,7 @@
 import { Outlet } from "react-router";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
+import { AccessibilityMenu } from "./AccessibilityMenu";
 import './Layout.css';
 
 export default function Layout() {
@@ -16,6 +17,7 @@ export default function Layout() {
       </main>
 
       <Footer />
+      <AccessibilityMenu />
     </>
   );
 }
