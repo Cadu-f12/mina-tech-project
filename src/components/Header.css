@@ -122,11 +122,16 @@
   display: inline-flex;
   align-items: center;
   min-height: 36px;
+  padding: 0;
   color: rgba(0, 0, 0, 0.84);
+  font: inherit;
   font-size: 15px;
   font-weight: 700;
   text-decoration: none;
   white-space: nowrap;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
   transition:
     color 180ms ease,
     opacity 180ms ease;
@@ -264,6 +269,10 @@
   }
 
   .header-link::after {
+    display: none;
+  }
+
+  .header-link--contact {
     display: none;
   }
 }

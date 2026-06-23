@@ -4,11 +4,11 @@ import "./Header.css";
 import logoMinaTech from "../assets/logo_minatech.png";
 
 const defaultLinks = [
-  { label: "Quem somos", href: "/quem-somos" },
+  { label: "Home", href: "/" },
   { label: "OSCS", href: "/oscs" },
   { label: "Programação", href: "/programacao" },
   { label: "FAQ", href: "/faq" },
-  { label: "Contato", href: "/contato" },
+  { label: "Contato", action: "scroll-bottom" },
 ];
 
 export function Header({ links = defaultLinks }) {
@@ -21,6 +21,17 @@ export function Header({ links = defaultLinks }) {
 
   const closeMenu = () => {
     setIsOpen(false);
+  };
+
+  const scrollToPageBottom = () => {
+    closeMenu();
+
+    requestAnimationFrame(() => {
+      window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: "smooth",
+      });
+    });
   };
 
   return (
@@ -59,16 +70,27 @@ export function Header({ links = defaultLinks }) {
           className="header-nav"
           aria-label="Navegacao principal"
         >
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              to={link.href}
-              className="header-link"
-              onClick={closeMenu}
-            >
-              {link.label}
-            </Link>
-          ))}
+          {links.map((link) =>
+            link.action === "scroll-bottom" ? (
+              <button
+                key={link.label}
+                type="button"
+                className="header-link header-link--contact"
+                onClick={scrollToPageBottom}
+              >
+                {link.label}
+              </button>
+            ) : (
+              <Link
+                key={link.href}
+                to={link.href}
+                className="header-link"
+                onClick={closeMenu}
+              >
+                {link.label}
+              </Link>
+            ),
+          )}
         </nav>
       </div>
     </header>

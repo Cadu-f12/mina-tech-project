@@ -30,13 +30,14 @@
   gap: 50px;
 }
 
-.footer-title {
-  font-size: 26px;
-  font-weight: 400;
-  margin: 0;
+.footer-logo {
+  display: block;
+  width: 180px;
+  height: auto;
+  object-fit: contain;
 
   @media (max-width: 1024px) {
-    text-align: center;
+    margin: 0 auto;
   }
 }
 

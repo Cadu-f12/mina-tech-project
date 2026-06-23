@@ -1,4 +1,5 @@
 import "./Footer.css";
+import logoMinaTech from "../assets/logo_minatech.png";
 
 const PhoneIcon = () => (
   <svg
@@ -68,13 +69,12 @@ const InstagramIcon = () => (
 );
 
 const defaultContacts = [
-  { icon: <PhoneIcon />, label: "(31) 99999-9999" },
-  { icon: <EmailIcon />, label: "contato@minatech.com.br" },
-  { icon: <LocationIcon />, label: "Belo Horizonte, MG" },
+  { icon: <PhoneIcon />, label: "(48) 99137-5245" },
+  { icon: <EmailIcon />, label: "minatech.floripa@gmail.com" },
+  { icon: <LocationIcon />, label: "Florianópolis, SC" },
 ];
 
 export function Footer({
-  title = "MinaTech",
   contacts = defaultContacts,
   instagramHandle = "@minatech.brasil",
   instagramUrl = "https://www.instagram.com/minatech.brasil/",
@@ -83,7 +83,7 @@ export function Footer({
     <footer className="footer">
       <div className="footer-inner">
         <div className="footer-left">
-          <h3 className="footer-title">{title}</h3>
+          <img src={logoMinaTech} alt="MinaTech" className="footer-logo" />
           <div className="footer-contacts">
             {contacts.map((item, i) => (
               <div key={i} className="contact-item">
