@@ -44,3 +44,49 @@
   width: 35%;
   margin: 1rem auto;
 }
+
+/* ----- Tablet ----- */
+@media (max-width: 1024px) {
+  .quem-somos-texto {
+    width: 80%;
+  }
+
+  .quem-somos-titulo {
+    font-size: 4rem;
+  }
+
+  .quem-somos-subtitulo {
+    font-size: 1.2rem;
+  }
+
+  .quem-somos-texto p {
+    font-size: 1.4rem;
+  }
+}
+
+/* ----- Mobile ----- */
+@media (max-width: 600px) {
+  .secao-quem-somos {
+    padding: 0 1.2rem 3rem 1.2rem;
+  }
+
+  .quem-somos-texto {
+    width: 100%;
+  }
+
+  .quem-somos-titulo {
+    font-size: 2.6rem;
+  }
+
+  .quem-somos-subtitulo {
+    font-size: 1rem;
+  }
+
+  .quem-somos-texto p {
+    font-size: 1.05rem;
+  }
+
+  .quem-somos-divisor {
+    width: 60%;
+  }
+}

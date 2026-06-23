@@ -17,6 +17,10 @@
   margin-bottom: 2rem;
 }
 
+.card-programa-botoes .btn {
+  font-size: 1.3rem;
+}
+
 .card-programa-marca {
   font-family: "Ancizar Serif", serif;
   font-style: normal;
@@ -32,6 +36,50 @@
   user-select: none;
 }
 
-.btn {
-    font-size: 1.3rem;
+/* ----- Tablet ----- */
+@media (max-width: 1024px) {
+  .card-programa {
+    height: auto;
+    max-width: 28rem;
+    padding: 1.5rem !important;
+  }
+
+  .card-programa-texto {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+  }
+
+  .card-programa-botoes .btn {
+    font-size: 1.1rem;
+  }
+}
+
+/* ----- Mobile ----- */
+@media (max-width: 600px) {
+  .card-programa {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+    padding: 1.2rem !important;
+  }
+
+  .card-programa-texto {
+    font-size: 1rem;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .card-programa-botoes {
+    flex-direction: column;
+    gap: 0.75rem !important;
+  }
+
+  .card-programa-botoes .btn {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .card-programa-marca {
+    display: none;
+  }
 }
