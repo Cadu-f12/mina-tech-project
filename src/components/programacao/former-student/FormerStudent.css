@@ -3,11 +3,11 @@
     align-items: center;
     justify-content: center;
 
-    gap: 6rem;
+    gap: 4rem;
 
     width: 100%;
 
-    padding: 3rem 6rem;
+    padding: 2.4rem 4rem;
 
     background-color: #fff;
 
@@ -24,8 +24,8 @@
 }
 
 .former-student-image img {
-    width: 20rem;
-    height: 25rem;
+    width: 15rem;
+    height: 19rem;
 
     object-fit: cover;
 
@@ -33,14 +33,14 @@
 }
 
 .former-student-content {
-    flex: 0 1 68rem;
+    flex: 0 1 48rem;
 
     display: flex;
     flex-direction: column;
 
     gap: 2rem;
 
-    max-width: 68rem;
+    max-width: 48rem;
 }
 
 .former-student-content h2 {
@@ -48,7 +48,7 @@
 
     color: #700000;
 
-    font-size: 2rem;
+    font-size: 1.55rem;
 
     font-weight: 700;
 }
@@ -58,7 +58,7 @@
 
     color: #5d4f4f;
 
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 
     line-height: 1.35;
 }
@@ -74,17 +74,17 @@
 @media (max-width: 900px) {
 
     .former-student-card {
-        gap: 3rem;
-        padding: 3rem 4rem;
+        gap: 2.4rem;
+        padding: 2.4rem 3rem;
     }
 
     .former-student-image img {
-        width: 17rem;
-        height: 21rem;
+        width: 14rem;
+        height: 18rem;
     }
 
     .former-student-content p {
-        font-size: 1.6rem;
+        font-size: 1.25rem;
     }
 
 }
