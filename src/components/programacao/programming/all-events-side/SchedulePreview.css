@@ -3,13 +3,13 @@
     align-items: center;
     justify-content: space-between;
 
-    gap: 1.6rem;
+    gap: 1rem;
 
-    min-height: 11.2rem;
+    min-height: 8.8rem;
 
-    padding: 1.6rem 2rem;
+    padding: 1.2rem 1.4rem;
 
-    border-radius: 28px;
+    border-radius: 20px;
 
     background-color: #f2f2f2;
 
@@ -28,11 +28,11 @@
 }
 
 .schedule-preview-content h3 {
-    margin: 0 0 1rem;
+    margin: 0 0 .5rem;
 
     color: #4a4a4a;
 
-    font-size: 1.8rem;
+    font-size: 1.35rem;
     font-weight: 400;
 }
 
@@ -49,7 +49,7 @@
 
     color: #6d6d6d;
 
-    font-size: 1.4rem;
+    font-size: 1rem;
     line-height: 1.18;
 
     -webkit-box-orient: vertical;
@@ -61,8 +61,8 @@
 }
 
 .schedule-preview-image img {
-    width: 8.8rem;
-    height: 8.4rem;
+    width: 7rem;
+    height: 6.6rem;
 
     object-fit: cover;
 
@@ -75,14 +75,14 @@
 @media (max-width: 900px) {
 
     .schedule-preview-div {
-        min-height: 11.5rem;
+        min-height: 8.6rem;
 
-        padding: 1.6rem 2rem;
+        padding: 1.1rem 1.3rem;
     }
 
     .schedule-preview-image img {
-        width: 9rem;
-        height: 8.4rem;
+        width: 6.6rem;
+        height: 6.4rem;
     }
 
 }

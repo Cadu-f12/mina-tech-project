@@ -1,7 +1,17 @@
 .programming-section {
-  padding: 4rem 3rem;
-  padding-top: 100px;
+  box-sizing: border-box;
+
+  padding: clamp(120px, 11vw, 200px) clamp(4rem, 8vw, 12rem) 5rem;
+  width: 100%;
+  overflow-x: hidden;
+
   background-color: #f4f4f4;
+}
+
+.programming-section *,
+.programming-section *::before,
+.programming-section *::after {
+  box-sizing: border-box;
 }
 
 .programming-section-content {
@@ -9,9 +19,9 @@
   align-items: flex-start;
   justify-content: center;
 
-  gap: 3.2rem;
+  gap: 2.4rem;
 
-  width: min(100%, 150rem);
+  width: min(100%, 118rem);
 
   margin: 0 auto;
 }
@@ -20,13 +30,13 @@
 
 @media (max-width: 1100px) {
   .programming-section-content {
-    gap: 3rem;
+    gap: 2rem;
   }
 }
 
 @media (max-width: 900px) {
   .programming-section {
-    padding: 3rem 2rem;
+    padding: clamp(90px, 12vw, 140px) 2rem 3rem;
   }
 
   .programming-section-content {
@@ -43,10 +53,11 @@
 
 @media (max-width: 768px) {
   .programming-section {
-    padding: 1.5rem 1rem;
+    padding: clamp(76px, 18vw, 110px) 1.2rem 2rem;
   }
 
   .programming-section-content {
     gap: 2rem;
+    width: 100%;
   }
 }
