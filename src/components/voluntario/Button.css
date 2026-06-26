@@ -1,0 +1,33 @@
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  color: #482929a8;
+  height: 32px; /* fixed height */
+  margin: 0 0 8px 0;
+}
+
+.button {
+  width: auto;
+  height: 107px;
+  background-color: #fbfbfb;
+  color: #482929ab;
+  border-radius: 5px;
+  border-width: 0px;
+  box-shadow: 0 0 20px 0 #48292917;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.button:active {
+  transform: scale(0.98);
+  background-color: #fbfbfb;
+  box-shadow: 0 0 20px 0 #7c2a2a45;
+}
+
+.button.selected {
+  box-shadow: inset 0 0 20px 0 rgba(124, 42, 42, 0.27);
+  background: #f5f0f0;
+}

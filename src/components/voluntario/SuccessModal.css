@@ -1,0 +1,126 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+  backdrop-filter: blur(2px);
+}
+
+.modal-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 48px 40px 40px;
+  max-width: 480px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(221, 110, 124, 0.2), 0 4px 16px rgba(0, 0, 0, 0.1);
+  animation: modal-in 0.25s ease;
+}
+
+@keyframes modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.modal-icon-wrapper {
+  margin-bottom: 24px;
+}
+
+.modal-icon {
+  width: 64px;
+  height: 64px;
+}
+
+.modal-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #482929;
+  margin: 0 0 12px 0;
+  line-height: 1.2;
+}
+
+.modal-text {
+  font-size: 15px;
+  color: #482929b0;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+}
+
+/* Bloco de destaque da entrevista */
+.modal-highlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: linear-gradient(135deg, #fff0f3 0%, #fde8ec 100%);
+  border-left: 4px solid #ff004d;
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-bottom: 16px;
+  text-align: left;
+  width: 100%;
+}
+
+.modal-highlight-icon {
+  font-size: 22px;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.modal-highlight-text {
+  font-size: 15px;
+  color: #482929cc;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.modal-highlight-text strong {
+  color: #c0002e;
+}
+
+.modal-subtext {
+  font-size: 13px;
+  color: #48292970;
+  font-style: italic;
+  margin: 0 0 28px 0;
+}
+
+.modal-button {
+  width: 100%;
+  height: 52px;
+  background: linear-gradient(180deg, #ff004d 0%, #dd6e7c 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.modal-button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 540px) {
+  .modal-card {
+    padding: 36px 24px 28px;
+  }
+
+  .modal-title {
+    font-size: 22px;
+  }
+}

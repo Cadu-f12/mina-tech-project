@@ -10,7 +10,7 @@ const CardPrograma = () => {
       </p>
       <div className="card-programa-botoes d-flex gap-4 mb-3">
         <Link to="/inscricao" className="btn btn-danger">Participar</Link>
-        <Link to="/apoio" className="btn btn-danger">Apoie o projeto</Link>
+        <Link to="./voluntario" className="btn btn-danger">Apoie o projeto</Link>
       </div>
       <span className="card-programa-marca">Minatech</span>
     </div>
