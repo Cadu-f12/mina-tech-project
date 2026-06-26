@@ -1,0 +1,113 @@
+/* Reutiliza as classes base do SuccessModal — importe SuccessModal.css também,
+   ou copie os blocos abaixo junto com ele num Modal.css compartilhado. */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+  backdrop-filter: blur(2px);
+}
+
+.modal-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 48px 40px 40px;
+  max-width: 480px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(221, 110, 124, 0.2), 0 4px 16px rgba(0, 0, 0, 0.1);
+  animation: modal-in 0.25s ease;
+}
+
+@keyframes modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.modal-icon-wrapper {
+  margin-bottom: 24px;
+}
+
+.modal-icon {
+  width: 64px;
+  height: 64px;
+}
+
+.modal-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #482929;
+  margin: 0 0 12px 0;
+  line-height: 1.2;
+}
+
+.modal-text {
+  font-size: 15px;
+  color: #482929b0;
+  line-height: 1.6;
+  margin: 0 0 16px 0;
+}
+
+.modal-button {
+  width: 100%;
+  height: 52px;
+  background: linear-gradient(180deg, #ff004d 0%, #dd6e7c 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  margin-top: 24px;
+}
+
+.modal-button:hover {
+  opacity: 0.9;
+}
+
+/* Específico do ErrorModal */
+.error-field-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.error-field-item {
+  background-color: #fff0f3;
+  border-left: 3px solid #ff004d;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #c0002e;
+  text-align: left;
+}
+
+@media (max-width: 540px) {
+  .modal-card {
+    padding: 36px 24px 28px;
+  }
+
+  .modal-title {
+    font-size: 22px;
+  }
+}

@@ -8,6 +8,7 @@ import Inscricao from "./pages/Inscricao";
 import Programacao from "./pages/Programacao";
 import FAQ from "./pages/FAQ";
 import Contato from "./pages/Contato";
+import Voluntario from "./pages/Voluntario";
 import Layout from "./components/Layout";
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           <Route path="/programacao" element={<Programacao />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contato" element={<Contato />} />
+          <Route path="/voluntario" element={<Voluntario />} />
         </Route>
       </Routes>
     </BrowserRouter>
